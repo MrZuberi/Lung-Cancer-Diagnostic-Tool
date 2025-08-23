@@ -4,7 +4,7 @@ This project focuses on building a machine learning model to predict patient sur
 📊 ***Dataset***
 The data is sourced from the Lung Cancer Dataset on Kaggle. It contains anonymized patient data, including demographics, medical history, and treatment details from various, mostly European, countries. The dataset has no missing values, providing a clean foundation for analysis.
 
-⚙️ Feature Engineering
+⚙️ ***Feature Engineering***
 Before modeling, the raw data was preprocessed to create meaningful features for the classifier:
 
 Treatment Duration: A new feature, treatment_duration_days, was created by calculating the difference between the end_treatment_date and diagnosis_date. The original date columns were then removed.
@@ -20,8 +20,6 @@ Accuracy: ~0.77
 Precision: ~0.73
 Recall: ~0.61
 AUC: 0.81
-
-The trained Logistic Regression model is saved to the file logistic_regression_model.pkl.
 
 🚀 ***How to Use***
 To replicate this project, follow the steps below.
