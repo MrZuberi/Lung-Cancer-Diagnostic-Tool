@@ -35,7 +35,7 @@ Clone the repository:
 
 Bash
 
-git clone https://github.com/your-username/lung-cancer-diagnostic-tool.git
+git clone https://github.com/MrZuberi/lung-cancer-diagnostic-tool.git
 cd lung-cancer-diagnostic-tool
 Install the required Python packages:
 
