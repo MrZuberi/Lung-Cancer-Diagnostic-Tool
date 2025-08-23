@@ -1,66 +1,55 @@
-# Lung Cancer Diagnostic Tool for the NeuraVia Hackathon
+***Lung Cancer Survival Prediction***
+This project focuses on building a machine learning model to predict patient survival from lung cancer using a clinical dataset. The script details the entire workflow, from data cleaning and feature engineering to model training, evaluation, and saving the final model.
 
-Lung Cancer Diagnostic Tool (NeuraVia Hackathon)
-A proof-of-concept web application that uses a machine learning model to provide an initial risk assessment for lung cancer based on patient data. This tool is designed to assist healthcare professionals in the early stages of diagnosis.
+📊 ***Dataset***
+The data is sourced from the Lung Cancer Dataset on Kaggle. It contains anonymized patient data, including demographics, medical history, and treatment details from various, mostly European, countries. The dataset has no missing values, providing a clean foundation for analysis.
 
-🎯 Project Goal
-Early detection of lung cancer significantly increases survival rates. This project aims to provide a simple, accessible tool that leverages machine learning to quickly analyze key patient metrics and flag high-risk cases that may require further investigation.
+⚙️ Feature Engineering
+Before modeling, the raw data was preprocessed to create meaningful features for the classifier:
 
-✨ Features
-User-Friendly Interface: A clean web form for easy input of patient data.
+Treatment Duration: A new feature, treatment_duration_days, was created by calculating the difference between the end_treatment_date and diagnosis_date. The original date columns were then removed.
+Categorical Encoding: One-hot encoding was applied to nominal categorical features such as gender, country, family_history, smoking_status, and treatment_type.
+Ordinal Encoding: The cancer_stage column was converted from text (e.g., 'Stage I') to ordered numerical codes (0, 1, 2, 3) to preserve its inherent order.
 
-ML-Powered Prediction: The backend uses a trained neural network to generate a risk score in real-time.
+🧠 ***Model Development***
+The goal was to build a reliable binary classification model.
+An initial XGBoost Classifier was trained but did not yield satisfactory performance. Consequently, a Logistic Regression model was implemented and selected as the final model due to its robust and interpretable results.
 
-Clear Results: The prediction is displayed as a clear probability percentage and risk level (e.g., Low, Medium, High).
+The final model's performance on the test set is as follows:
+Accuracy: ~0.77
+Precision: ~0.73
+Recall: ~0.61
+AUC: 0.81
 
-Data Security: All data is processed in memory and is not stored, ensuring patient privacy.
+The trained Logistic Regression model is saved to the file logistic_regression_model.pkl.
 
-🛠️ Tech Stack
-Machine Learning: TensorFlow (Keras), Scikit-learn, Pandas
-
-Backend: Python, Flask
-
-Frontend: HTML, CSS, JavaScript
-
-🚀 Getting Started
-Follow these steps to get the application running on your local machine.
+🚀 ***How to Use***
+To replicate this project, follow the steps below.
 
 Prerequisites
-Python 3.8+
+Ensure you have Python installed, along with the following libraries:
 
-Pip (Python Package Installer)
-Installation & Setup
+pandas
+numpy
+scikit-learn
+xgboost
+matplotlib
+joblib
+kagglehub
+
+Installation
 Clone the repository:
 
 Bash
-git clone https://github.com/MrZuberi/lung-cancer-diagnostic-tool.git
-cd lung-cancer-diagnostic-tool
+git clone https://github.com/your-username/lung-cancer-prediction.git
+cd lung-cancer-prediction
 
-Install the required Python packages:
+***Install dependencies:***
 
-$ Bash
+Bash
 pip install -r requirements.txt
+Running the Script
+Execute the main Python script to run the full data processing and model training pipeline.
 
-Running the Application
-
-$ Bash
-(!Exe goes here!)
-
-📊 Model Overview
-The core of this tool is a Multi-Layer Perceptron (MLP) model built with TensorFlow and Keras. It was trained on a tabular dataset containing anonymized patient data.
-
-The primary challenge was a moderate class imbalance (78/22 split), which was addressed using class weighting during training to ensure the model did not become biased towards the majority class. This technique improved the model's ability to correctly identify the **high-risk** minority class.
-
-🔮 Future Improvements
-Model Explainability: Integrate SHAP or LIME to explain why the model made a specific prediction.
-
-Incorporate Imaging Data: Expand the model to analyze CT scan images using a Convolutional Neural Network (CNN) for a more comprehensive diagnosis.
-
-Cloud Deployment: Deploy the application on a cloud platform like GCP, AWS, or Azure for wider accessibility.
-
-👥 Team Members
-Faba Kouyate
-Ubaid Ur Rehman
-Asiya Farooqi
-Aztakis (LAST NAME)
-
+Bash
+python lung_cancer___0_77_accuracy.py
