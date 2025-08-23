@@ -4,7 +4,7 @@
 ____________________
 
 ## 📊 Dataset
-The data is sourced from the Lung Cancer Dataset on Kaggle. It contains anonymized patient data, including demographics, medical history, and treatment details from various EU countries. The dataset has no missing values, providing a clean foundation for data analysis.
+The data is sourced from the Lung Cancer Dataset on Kaggle. It contains anonymized patient data, including demographics, medical history, and treatment details from various countries. The dataset has no missing values, providing a clean foundation for data analysis.
 
 
 ## ⚙️ Feature Engineering
