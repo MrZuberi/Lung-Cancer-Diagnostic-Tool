@@ -29,31 +29,27 @@ Prerequisites
 Python 3.8+
 
 Pip (Python Package Installer)
-
 Installation & Setup
 Clone the repository:
 
 Bash
-
 git clone https://github.com/MrZuberi/lung-cancer-diagnostic-tool.git
 cd lung-cancer-diagnostic-tool
+
 Install the required Python packages:
 
-Bash
-
+$ Bash
 pip install -r requirements.txt
+
 Running the Application
-Start the Flask server:
 
-Bash
-
-python app.py
-Open your browser and navigate to http://127.0.0.1:5000 to use the tool.
+$ Bash
+(!Exe goes here!)
 
 📊 Model Overview
-The core of this tool is a Multi-Layer Perceptron (MLP) model built with Keras. It was trained on a tabular dataset containing anonymized patient information.
+The core of this tool is a Multi-Layer Perceptron (MLP) model built with TensorFlow and Keras. It was trained on a tabular dataset containing anonymized patient data.
 
-The primary challenge was a moderate class imbalance (78/22 split), which was addressed using class weighting during training to ensure the model did not become biased towards the majority class. This technique improved the model's ability to correctly identify the high-risk minority class.
+The primary challenge was a moderate class imbalance (78/22 split), which was addressed using class weighting during training to ensure the model did not become biased towards the majority class. This technique improved the model's ability to correctly identify the **high-risk** minority class.
 
 🔮 Future Improvements
 Model Explainability: Integrate SHAP or LIME to explain why the model made a specific prediction.
@@ -63,6 +59,8 @@ Incorporate Imaging Data: Expand the model to analyze CT scan images using a Con
 Cloud Deployment: Deploy the application on a cloud platform like GCP, AWS, or Azure for wider accessibility.
 
 👥 Team Members
-[Your Name]
+Faba Kouyate
+Ubaid Ur Rehman
+Asia (LAST NAME)
+Aztakis (LAST NAME)
 
-[Teammate's Name]
