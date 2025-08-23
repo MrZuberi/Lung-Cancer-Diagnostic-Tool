@@ -61,6 +61,6 @@ Cloud Deployment: Deploy the application on a cloud platform like GCP, AWS, or A
 👥 Team Members
 Faba Kouyate
 Ubaid Ur Rehman
-Asia (LAST NAME)
+Asiya Farooqi
 Aztakis (LAST NAME)
 
