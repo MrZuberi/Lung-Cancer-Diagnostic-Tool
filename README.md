@@ -6,7 +6,7 @@
 ____________________
 
 ## 📊 Dataset
-The data is sourced from the Lung Cancer Dataset on Kaggle. It contains anonymized patient data, including demographics, medical history, and treatment details from various countries. The dataset has no missing values, providing a clean foundation for data analysis.
+The data is sourced from a synthetic lung cancer patient dataset created by Khwaish Saxena. It contains factitious patient data, including demographics, medical history, and treatment details from various countries. The dataset has no missing values, providing a clean foundation for data analysis.
 
 
 ## ⚙️ Feature Engineering
@@ -55,7 +55,7 @@ git clone https://github.com/MrZuberi/lung-cancer-prediction.git
 
 ## 🚀 How to Use
 
-[ADD ROUGH INSTRUCTIONS]
+**Refer To READ.MD**
 
  # ***Our Team***
  Faba Kouyate
