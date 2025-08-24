@@ -59,10 +59,11 @@ git clone https://github.com/MrZuberi/lung-cancer-prediction.git
 **Refer To READ.MD**
 
  # ***Our Team***
+ 
  Faba Kouyate
  
  Ubaid Ur Rehman
  
  Asiya Farooqi
- 
- Aztakis Zuberi
+
+ Taha Zuberi
