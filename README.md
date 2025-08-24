@@ -45,6 +45,7 @@ Includes the following libraries:
 * matplotlib
 * joblib
 * kagglehub
+* streamlit
 
 Clone the repository:
 
