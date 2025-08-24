@@ -23,10 +23,10 @@ The goal was to build a reliable binary classification model.
 An initial XGBoost Classifier was trained but did not yield satisfactory performance. Consequently, a Logistic Regression model was implemented and selected as the final model due to its robust and interpretable results.
 
 The final model's performance on the test set is as follows:
-* Accuracy: ~0.77
-* Precision: ~0.73
-* Recall: ~0.61
-* AUC: 0.81
+* Accuracy: ~0.75
+* Precision: ~0.41
+* Recall: ~0.56
+* AUC: 0.59
 
 # ***Installation***
 
@@ -64,4 +64,4 @@ git clone https://github.com/MrZuberi/lung-cancer-prediction.git
  
  Asiya Farooqi
  
- Aztakis (Add Last Name) 
+ Aztakis Zuberi
