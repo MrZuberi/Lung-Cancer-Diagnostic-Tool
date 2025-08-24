@@ -53,7 +53,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/MrZuberi/lung-cancer-prediction.git
 ```
-## https://huggingface.co/spaces/UUbaidurRehman/Lung-Cancer-Diagnostic-Tool
+## https://huggingface.co/spaces/UUbaidurRehman/Lung-Cancer-Diagnostic-Tool_
 
 ## 🚀 How to Use
 
