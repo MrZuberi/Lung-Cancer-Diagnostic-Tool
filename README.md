@@ -1,7 +1,7 @@
 # **Lung Cancer Survival Prediction**</h6>
 ## ***[Demo](https://youtu.be/s_uRpYBzmaA)***
 
-**This project focuses on building a machine learning model to predict patient survival from lung cancer using a clinical dataset. The script details the entire workflow, from data cleaning and feature engineering to model training, evaluation, and saving the final model.**
+**This project focuses on building a machine learning model to predict patient survival from lung cancer using a synthetic clinical dataset. The script details the entire workflow, from data cleaning and feature engineering to model training, evaluation, and saving the final model.**
 
 *This tool is suitable for machine learning modeling, analysis, and educational projects — not for clinical or diagnostic use.
 ____________________
